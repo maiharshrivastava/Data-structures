@@ -1,3 +1,10 @@
+# Linked List Insertion at Head, Tail, and Position
+
+This code demonstrates a linked list implementation in C++. It provides functionality to insert nodes at the head, tail, and at a specified position in the linked list.
+
+## Code 
+
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -8,7 +15,7 @@ public:
     
     Node(int data) {
         this->data = data;
-        this->next = NULL;
+        this->next = nullptr;
     }
 };
 
@@ -28,7 +35,7 @@ void InsertAtTail(Node* &tail, int d) {
     }
 }
 
-void InsertAtPosition(Node* &tail,Node* &head, int position, int d) {
+void InsertAtPosition(Node* &tail, Node* &head, int position, int d) {
     if (position == 1) {
         insertAtHead(head, d);
         return;
@@ -41,9 +48,8 @@ void InsertAtPosition(Node* &tail,Node* &head, int position, int d) {
         cnt++;
     }
 
-    if (temp -> next == NULL ){
-                InsertAtTail(tail,d);
-
+    if (temp->next == nullptr) {
+        InsertAtTail(tail, d);
         return;
     }
 
@@ -65,24 +71,21 @@ void print(Node* head) {
 int main() {
     Node* node1 = new Node(10);
 
-    // cout << node1->data << endl;
-    // cout << node1->next << endl;
-
     Node* head = node1;
     Node* tail = node1;
     print(head);
 
     InsertAtTail(tail, 12);
     print(head);
-     InsertAtTail(tail, 15);
+    
+    InsertAtTail(tail, 15);
     print(head);
 
-    InsertAtPosition(tail , head, 3, 22);
+    InsertAtPosition(tail, head, 3, 22);
     print(head);
 
-
-    cout << "head " << head -> data << endl;
-    cout << "tail " << tail -> data << endl;
+    cout << "head " << head->data << endl;
+    cout << "tail " << tail->data << endl;
 
     return 0;
 }
