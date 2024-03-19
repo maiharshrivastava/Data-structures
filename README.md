@@ -1,4 +1,4 @@
-# Basic LinkedList 
+# LinkedList 
 
 This C++ program demonstrates the creation of a basic linked list. It consists of a `Node` class representing individual nodes in the linked list and a `main` function that creates a single node and prints its data and the value of its `next` pointer.
 
