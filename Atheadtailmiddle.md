@@ -1,6 +1,6 @@
 # Linked List Insertion at Head, Tail, and Position
 
-This code demonstrates a linked list implementation in C++. It provides functionality to insert nodes at the head, tail, and at a specified position in the linked list.
+This code demonstrates a linked list implementation in C++. It provides functionality to insert nodes at the head, tail, and at a specified position in the linked list .
 
 ## Code 
 
